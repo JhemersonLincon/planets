@@ -66,10 +66,9 @@ button#btn-mobile{
         z-index: 10000;
         height: calc(100vh - 50px);
     }
-    .menu li a{
+    .menu  a{
+        margin-top: 20px;
         display: block;
-        width: 100%;
-        padding: 30px 0px;
     }
     .menu a:hover{
         background-color: teal;
@@ -143,6 +142,9 @@ nav .menu a{
     flex-direction: column;
 
 }
+.ações .selected{
+    background-color: teal;
+}
 .dados article{
     width: 20rem;
 }
@@ -187,10 +189,14 @@ nav .menu a{
         margin-left: 0px;      
         width: 200px;
     }
+    div.hidden{
+        opacity: 0;
+    }
     .ações{
+        transition: 3s;
         position: absolute;
         top: 40px;
-        left: 1px;
+        left: 22px;
         display: flex;
     }
     .ações button{
