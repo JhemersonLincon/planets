@@ -66,10 +66,12 @@ button#btn-mobile{
         z-index: 10000;
         height: calc(100vh - 50px);
     }
-    nav li{
-        padding: 20px 0px;
+    .menu li a{
+        display: block;
+        width: 100%;
+        padding: 30px 0px;
     }
-    nav li:hover{
+    .menu a:hover{
         background-color: teal;
     }
     .logo{
@@ -106,7 +108,8 @@ button#btn-mobile{
     }    
 }
 nav .menu li{
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 nav .menu a{
     padding: 5px;

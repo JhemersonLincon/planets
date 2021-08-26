@@ -15,7 +15,15 @@ body{
     align-items: center;
     border: solid rgba(255, 255, 255, 0.72) 0.01rem;
     justify-content: space-between;
-}   
+} 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+}  
 
 .menu{
     list-style: none;
@@ -121,12 +129,6 @@ li.stars{
     border-radius: 30px;
     animation: upKey 10s infinite;
 
-}
-main{
-    display: flex;
-    height: calc(100vh - 50px);
-    justify-content: center;
-    align-items: center;
 }
 .planets_abas{
     display: flex;
