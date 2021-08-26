@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color1: rgb(1, 1, 29);
+}
+body{
+    
+    background-color: rgb(1, 1, 29);
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+#header{
+    color: white;
+    display: flex;   
+    height: 50px; 
+    align-items: center;
+    border-bottom: solid rgba(255, 255, 255, 0.72) 0.01rem;
+    justify-content: space-between;
+}   
+
+.menu{
+    font-weight: bold;
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+
+}
+
+
+button#btn-mobile{
+    display: flex;
+    align-items: center;
+    border: none;
+    display: none;
+    color: white;
+    font-weight: bold;
+    background-color:rgb(1, 1, 29) ;
+    position: absolute;
+    top: 14px;
+    right: 30px;
+}
+
+@media (max-width: 700px) {
+    .menu{
+        display: block;
+        visibility: hidden;
+        height: 0px;        
+        width: 100%;
+        position: absolute;
+        top: 51px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: var(--color1);
+        right: 0;
+        left: 0;
+        overflow-y: hidden;
+        transition: .6s;
+    }
+    nav.active .menu{
+        visibility: visible;
+        z-index: 10000;
+        height: calc(100vh - 50px);
+    }
+    nav li{
+        padding: 20px 0px;
+    }
+    nav li:hover{
+        background-color: teal;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    button#btn-mobile{
+        display: flex;
+        cursor:pointer;
+    }
+    .hamburguer{
+        margin-left: 5px;
+        border-top: solid 2px;
+        width: 20px;
+    }
+    .hamburguer::after, .hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        background-color: currentColor;
+        height: 2px;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    nav.active .hamburguer{
+        border-top: transparent;
+    }
+    nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+    nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }    
+}
+nav .menu li{
+    margin-left: 20px;
+}
+nav .menu a{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: rgba(0, 128, 128, 0.282);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 60px);
+}
+.image{
+    margin-left: 10rem;
+    width: 30rem;
+
+}
+.image img{
+    width: 100%;
+}
+.main .dados{
+    width: 30rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.dados article{
+    width: 20rem;
+}
+.dados h1{
+    font-size: 5rem;
+}
+
+.dados p{
+    margin-top: 30px;
+    width: 100%;
+    text-align: justify;
+}
+.dados a{
+    text-decoration: underline;
+}
+.ações button{
+    border: white solid 1px;
+    background-color: var(--color1) ;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: right;
+    width: 20rem;
+}
+.ações button:hover{
+    background-color: teal;
+}
+@media (max-width: 600px){
+    main.main{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .image{ 
+        margin-top: 50px;
+        margin-left: 0px;      
+        width: 200px;
+    }
+    .ações{
+        position: absolute;
+        top: 40px;
+        left: 1px;
+        display: flex;
+    }
+    .ações button{
+        padding: 11px 0px;
+        justify-content: center;
+
+        width: 10rem;
+    }
+    .dados h1{
+        text-align: center;
+    }
+    .dados{
+        display: flex;
+        align-items: center;
+    }
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:600px){
+    .sobre{
+        margin-top: 8rem;
+    }
+    .sobre .box{
+        margin-top: 20px;
+    }
+}
+.sobre .box{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: solid white 1px;
+    background-color: var(--color1);
+    height: 120px;
+    margin-left: 20px;
+    width: 15rem;
+}
+.box p{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.563);
+    margin-right: 30px;
+}
+.average p{
+    margin-left: 2rem;
+}
+.average h2{
+    margin-right: 20px;
+}
+.radius p{
+    margin-right: 4rem;
+}
