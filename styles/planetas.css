@@ -46,7 +46,7 @@ button#btn-mobile{
     right: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .menu{
         display: block;
         visibility: hidden;
@@ -177,7 +177,61 @@ nav .menu a{
 .ações button:hover{
     background-color: teal;
 }
-@media (max-width: 600px){
+@media (max-width: 1150px){
+    main.main{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .image{ 
+        margin-top: 50px;
+        margin-left: 0px;      
+        width: 600px;
+    }
+    div.hidden{
+        opacity: 0;
+    }
+    .ações{
+        transition: 3s;
+        position: absolute;
+        top: 41px;
+        left: 0;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .ações button{
+        padding: 11px 0px;
+        justify-content: center;
+
+        width: 10rem;
+    }
+    .dados h1{
+        text-align: center;
+    }
+    .dados{
+        display: flex;
+        align-items: center;
+    }
+
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1080px){
+    .sobre{
+        margin-left: 5rem;
+        margin-top: 23rem;
+    }
+    .sobre .box{
+        margin-top: 15px;
+        margin-right: 6rem;
+    }
+}
+@media (max-width: 700px){
     main.main{
         display: flex;
 
@@ -194,10 +248,13 @@ nav .menu a{
     }
     .ações{
         transition: 3s;
-        position: absolute;
-        top: 40px;
-        left: 22px;
+        position: relative;
+        top: 0px;
+        left: 0;
+        bottom: 0px;
+        right: 0px;
         display: flex;
+        align-items: center;
     }
     .ações button{
         padding: 11px 0px;
@@ -218,7 +275,7 @@ nav .menu a{
     justify-content: center;
     flex-wrap: wrap;
 }
-@media (max-width:600px){
+@media (max-width:700px){
     .sobre{
         margin-top: 8rem;
         margin-right: 20px;
