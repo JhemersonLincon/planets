@@ -273,6 +273,11 @@ nav .menu a{
         margin-top: 20px;
     }
 }
+@media (max-height: 600px){
+    .sobre{
+       margin-top: 20px; 
+    }
+}
 .sobre .box{
     display: flex;
     
