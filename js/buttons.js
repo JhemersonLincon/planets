@@ -1,9 +1,10 @@
+
+
+
+//click botão da class tbn-mobile
 const btn_mobile = document.querySelector("button#btn-mobile");
 const nav = document.querySelector("#nav");
 const area = document.querySelector("div.ações")
-
-
-//carregando botão
 btn_mobile.addEventListener("click", e =>{
     nav.classList.toggle("active");
     area.classList.toggle("hidden")
@@ -11,7 +12,7 @@ btn_mobile.addEventListener("click", e =>{
 
 
 
-// carrega e apaga os botôes das tag btn
+// click e apaga os botôes das class btn
 const btns = document.querySelectorAll(".btn");
 btns.forEach(Element =>{
     

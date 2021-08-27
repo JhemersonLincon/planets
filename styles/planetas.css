@@ -221,6 +221,7 @@ nav .menu a{
 @media (max-width:600px){
     .sobre{
         margin-top: 8rem;
+        margin-right: 20px;
     }
     .sobre .box{
         margin-top: 20px;
