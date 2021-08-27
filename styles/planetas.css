@@ -180,7 +180,6 @@ nav .menu a{
 @media (max-width: 1150px){
     main.main{
         display: flex;
-
         justify-content: center;
         align-items: center;
     }
@@ -234,28 +233,18 @@ nav .menu a{
 @media (max-width: 700px){
     main.main{
         display: flex;
-
         justify-content: center;
         align-items: center;
     }
     .image{ 
         margin-top: 50px;
         margin-left: 0px;      
-        width: 200px;
+        width: 400px;
     }
     div.hidden{
         opacity: 0;
     }
-    .ações{
-        transition: 3s;
-        position: relative;
-        top: 0px;
-        left: 0;
-        bottom: 0px;
-        right: 0px;
-        display: flex;
-        align-items: center;
-    }
+    
     .ações button{
         padding: 11px 0px;
         justify-content: center;
@@ -277,7 +266,7 @@ nav .menu a{
 }
 @media (max-width:700px){
     .sobre{
-        margin-top: 8rem;
+        margin-top: 10rem;
         margin-right: 20px;
     }
     .sobre .box{
